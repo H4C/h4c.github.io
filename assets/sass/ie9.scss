@@ -4,37 +4,53 @@
 @import 'libs/skel';
 
 /*
-	Aerial by HTML5 UP
+	Identity by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Wrapper */
+/* Basic */
 
-	#wrapper {
-		opacity: 1;
+	body {
+		background-image:		url('../../images/bg.jpg');
+		background-repeat:		no-repeat;
+		background-size:		cover;
+		background-position:	bottom center;
+		background-attachment:	fixed;
+
+		&:after {
+			display: none;
+		}
 	}
 
-/* Overlay */
+/* List */
 
-	#overlay {
-		opacity: 1;
-	}
-
-/* Header */
-
-	#header {
-		opacity: 1;
-
-		nav {
+	ul {
+		&.icons {
 			li {
-				opacity: 1;
+				a {
+					&:before {
+						color: _palette(border);
+					}
+
+					&:hover {
+						&:before {
+							color: _palette(highlight);
+						}
+					}
+				}
 			}
 		}
 	}
 
-/* Footer */
+/* Wrapper */
 
-	#footer {
-		background-image: url('images/ie/footer.svg');
+	#wrapper {
+		text-align: center;
+	}
+
+/* Main */
+
+	#main {
+		display: inline-block;
 	}
