@@ -1,6 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
-@import url("http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css");
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -1405,7 +1405,7 @@
 
 	body, input, select, textarea {
 		color: #fff;
-		font-family: 'Nanum Myeongjo', serif;
+		font-family: 'Nanum Myeongjo', bold;
 		font-size: 15pt;
 		font-weight: 400;
 		letter-spacing: 0.075em;
@@ -3153,7 +3153,7 @@
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #000000;
+		background: #2E3842;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
