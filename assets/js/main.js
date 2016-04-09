@@ -13,12 +13,62 @@
 
 	$(function() {
 
+		var displayBoxIndex = -1;
+
+		$("#arrow a").on("mouseenter", function() {
+			$("#arrow a").attr("class", "special");
+
+			if($("#arrow a").index(this) == 1) {
+				$(this).attr("class", "special scroll arrow-hover");
+			} else {
+				$(this).attr("class", "special arrow-hover");
+			}
+		});
+
+		$("#arrow").on("click", "a.scroll", function() {
+			$("html, body").animate({
+				scrollTop: $("#three").offset().top
+			}, 1500);
+		});
+
+		$(document).keydown(function(e) {
+		    if (e.keyCode == 40) { // Down
+				e.preventDefault();
+		        Navigate(1);
+		    }
+			if(e.keyCode == 38) { // Up
+				e.preventDefault();
+		        Navigate(-1);
+		    }
+			if(e.keyCode == 13) { // Enter
+				if($("#arrow a").index($("#arrow a.arrow-hover")) == 1) {
+					$("html, body").animate({
+						scrollTop: $("#three").offset().top
+					}, 1500);
+				} else {
+					location.href = $(".arrow-hover").prop("href");
+				}
+			}
+		});
+
+		var Navigate = function(diff) {
+		    displayBoxIndex += diff;
+		    var oBoxCollection = $("#arrow > li > a");
+		    if (displayBoxIndex >= oBoxCollection.length)
+		         displayBoxIndex = 0;
+		    if (displayBoxIndex < 0)
+		         displayBoxIndex = oBoxCollection.length - 1;
+		    var cssClass = "arrow-hover";
+		    oBoxCollection.removeClass(cssClass).eq(displayBoxIndex).addClass(cssClass);
+		}
+
+
 		var	$window = $(window),
 			$body = $('body'),
 			$wrapper = $('#page-wrapper'),
 			$banner = $('#banner'),
 			$header = $('#header');
-        
+
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
