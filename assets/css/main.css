@@ -8,7 +8,7 @@
 		padding: 0;
 		border: 0;
 		font-size: 100%;
-		font: inherit, '맑은 고딕';
+		font: inherit;
 		vertical-align: baseline;
 	}
 
@@ -1409,7 +1409,8 @@
 		font-family: 'Press Start 2P', cursive;
 		font-size: 15pt;
 		font-weight: 400;
-		letter-spacing: 0.075em;
+		letter-spacing: -1px;
+		/*letter-spacing: 0.075em;*/
 		line-height: 1.65em;
 	}
 
@@ -2513,12 +2514,12 @@
 			width: 60%;
 		}
 
-		.spotlight:nth-child(2n) {
+		/*.spotlight:nth-child(2n) {
 			-moz-flex-direction: row-reverse;
 			-webkit-flex-direction: row-reverse;
 			-ms-flex-direction: row-reverse;
 			flex-direction: row-reverse;
-		}
+		}*/
 
 		.spotlight:nth-child(1) {
 			background-color: rgba(0, 0, 0, 0.075);
@@ -2669,6 +2670,8 @@
 
 			.wrapper.style1 header.major p {
 				color: #c7ebe8;
+				font-family: "NanumGothic";
+				letter-spacing: 0.5px;
 			}
 
 			.wrapper.style1 label {
@@ -3651,6 +3654,12 @@
 			width: 70%;
 		}
 
+			#cta .inner header h2 {
+				word-spacing: 8px;
+				letter-spacing: -1px;
+				font-family: "NanumGothic", "Malgun Gothic";
+			}
+
 			#cta .inner header p {
 				color: inherit;
 			}
@@ -3878,4 +3887,31 @@
 
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
+	}
+
+	#two {
+		word-break: keep-all;
+		font-family: "NanumGothic", "Malgun Gothic";
+	}
+
+	#two .content {
+		margin: auto;
+	}
+
+	#two .content p {
+		font-size: 1rem;
+	}
+
+	#two h2 {
+		letter-spacing: -1px;
+		font-size: 2em;
+	}
+
+	#two h4 {
+		margin-bottom: 5px;
+		letter-spacing: -1px;
+	}
+
+	#two strong {
+		visibility: hidden;
 	}
