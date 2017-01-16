@@ -2953,6 +2953,10 @@
 			background-color: transparent;
 		}
 
+		.wrapper.style4 p {
+			font-family: "NanumGothic", "Malgun Gothic";
+		}
+
 		.wrapper.style5 {
 			background-color: #ffffff;
 			color: #4E4852;
