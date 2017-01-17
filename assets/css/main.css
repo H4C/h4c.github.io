@@ -1643,7 +1643,7 @@
 	@media screen and (max-width: 980px) {
 
 		header br {
-			display: none;
+			/* display: none; */
 		}
 
 	}
@@ -2580,7 +2580,7 @@
 			}
 
 				.spotlight br {
-					display: none;
+					/* display: none; */
 				}
 
 				.spotlight .image {
@@ -2590,8 +2590,11 @@
 				.spotlight .content {
 					padding: 4em 3em 2em 3em ;
 					max-width: none;
-					text-align: center;
 					width: 100%;
+				}
+
+				.spotlight h2 {
+					text-align: center;
 				}
 
 		}
