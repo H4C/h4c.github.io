@@ -27,7 +27,7 @@
 
 		$("#arrow").on("click", "a.scroll", function() {
 			$("html, body").animate({
-				scrollTop: $("#three").offset().top
+				scrollTop: $("#two").offset().top
 			}, 1500);
 		});
 
