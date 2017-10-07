@@ -3922,3 +3922,9 @@
 	#two strong {
 		visibility: hidden;
 	}
+
+/* Custom */
+
+	.highlight {
+		border-bottom: dotted 1px;
+	}
