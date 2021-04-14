@@ -18,7 +18,7 @@
 		$("#arrow a").on("mouseenter", function() {
 			$("#arrow a").attr("class", "special");
 
-			if($("#arrow a").index(this) == 1) {
+			if($("#arrow a").index(this) == 0) {
 				$(this).attr("class", "special scroll arrow-hover");
 			} else {
 				$(this).attr("class", "special arrow-hover");
